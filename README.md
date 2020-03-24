@@ -6,7 +6,7 @@
 - **Anggara Yuda Pratama             (05111840000008)**
 - **I Gusti Agung Chintya Prema Dewi (05111840000130)**
 
-## Problem Overview
+### Problem Overview
 
 ![rat in maze](https://user-images.githubusercontent.com/62136051/77439718-5ad3e100-6e22-11ea-93fa-034dbccdba76.jpg)
 

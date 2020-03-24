@@ -7,6 +7,9 @@
 - **I Gusti Agung Chintya Prema Dewi (05111840000130)**
 
 ## Problem Overview
+
+![image](https://user-images.githubusercontent.com/61231385/77434058-da59b400-6e12-11ea-9b18-a93916faafa9.png)
+
 A lazy maze traveller is planning to conquer an unusual yet distressing kind of maze. 
 There are  four keys that need to be collected in order to gain access to the way out
 and complete the  journey. Due to the unreasonable indolent behaviour of this traveller, 

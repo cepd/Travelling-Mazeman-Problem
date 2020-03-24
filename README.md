@@ -8,7 +8,7 @@
 
 ## Problem Overview
 
-          ![image](https://user-images.githubusercontent.com/61231385/77434058-da59b400-6e12-11ea-9b18-a93916faafa9.png)
+![rat in maze](https://user-images.githubusercontent.com/62136051/77439718-5ad3e100-6e22-11ea-93fa-034dbccdba76.jpg)
 
 A lazy maze traveller is planning to conquer an unusual yet distressing kind of maze. 
 There are  four keys that need to be collected in order to gain access to the way out

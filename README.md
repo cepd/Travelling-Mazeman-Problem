@@ -15,3 +15,14 @@ There are  four keys that need to be collected in order to gain access to the wa
 and complete the  journey. Due to the unreasonable indolent behaviour of this traveller, 
 he is aiming to find the shortest path  to finish his journey as soon as he gets the keys. 
 Help this lazy maze traveller find the fastest route!
+
+Input :
+N
+Maze NxN with
+  - # as wall
+  - . as step
+  - A, B, C, D as keys
+  - S as start
+  - F as finish
+Output :
+  - Local minimum steps (with initial path S -> A -> B -> C -> D -> F)

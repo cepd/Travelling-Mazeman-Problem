@@ -36,12 +36,32 @@ def evaluate(graph, initial_condition):
 
   first_index = 0
 
+  # new_initial_condition = 'S'
+  # for path in initial_condition:
+  #   new_initial_condition = new_initial_condition + ' -> ' + path
+  # new_initial_condition  = new_initial_condition + '-> F'
+
+  # print('evaluating initial condition : ' + str(new_initial_condition))
+  
+  # new_local_minimum_condition = 'S'
+  # for path in local_minimum_condition:
+  #   new_local_minimum_condition = new_local_minimum_condition + ' -> ' + path
+  # new_local_minimum_condition = new_local_minimum_condition + '-> F'
+
+  # print(str(local_minimum_condition) + ', cost = ' + str(local_minimum_cost))
+
   while first_index in range(len(initial_condition) - 1):
     second_index = first_index + 1
     while second_index < len(initial_condition):
       modified_condition = initial_condition.copy()
       modified_condition[first_index], modified_condition[second_index] = initial_condition[second_index], initial_condition[first_index]
       modified_condition_cost = getTotalCost(graph, modified_condition)
+
+      # new_modified_condition = 'S'
+      # for path in modified_condition:
+      #   new_modified_condition = new_modified_condition + ' -> ' + path
+      # new_modified_condition = new_modified_condition + '-> F'
+      # print(str(modified_condition) + ', cost = ' + str(modified_condition_cost))
 
       if modified_condition_cost < local_minimum_cost:
         local_minimum_cost = modified_condition_cost
@@ -163,7 +183,6 @@ def findPath(maze, start_pos, finish_pos):
         nums.put(next_path)
 
   return path
-
 
 all_path = {}
 maze = []

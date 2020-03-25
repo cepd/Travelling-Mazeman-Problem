@@ -56,20 +56,6 @@ def evaluate(graph, initial_condition):
 
   return local_minimum_condition, local_minimum_cost
 
-def createMaze():
-  maze = []
-  maze.append(['#', '#', '#', '#', '#', 'S', '#', '#', '#'])
-  maze.append(['#', ' ', 'D', ' ', ' ', ' ', ' ', ' ', '#'])
-  maze.append(['#', ' ', '#', '#', ' ', '#', '#', 'C', '#'])
-  maze.append(['#', ' ', '#', ' ', ' ', ' ', '#', ' ', '#'])
-  maze.append(['#', ' ', '#', ' ', '#', ' ', '#', ' ', '#'])
-  maze.append(['#', ' ', '#', ' ', '#', 'B', '#', ' ', '#'])
-  maze.append(['#', ' ', '#', ' ', '#', ' ', '#', '#', '#'])
-  maze.append(['#', 'A', ' ', ' ', ' ', ' ', ' ', ' ', '#'])
-  maze.append(['#', '#', '#', '#', '#', '#', '#', 'F', '#'])
-
-  return maze
-
 def printMaze(maze, start_pos, path):
   for y in range (len(maze)):
     for x, pos in enumerate(maze[y]):
@@ -180,7 +166,25 @@ def findPath(maze, start_pos, finish_pos):
 
 
 all_path = {}
-maze  = createMaze()
+maze = []
+n = int(input('size : '))
+print('maze : ')
+for i in range(n):
+  row = input().split(' ')
+  maze.append(row)
+
+# maze example :
+# # # # # S # # #
+# . D . . . . . #
+# . # # . # # C #
+# . # . . . # . #
+# . # . # . # . #
+# . # . # B # . #
+# . # . # . # # #
+# A . . . . . . #
+# # # # # # # F #
+
+print()
 
 graph, all_path = mazeToGraph(maze)
 local_minimum_condition = []

@@ -19,10 +19,10 @@ Help this lazy maze traveller find the fastest route!
 Input :
 N
 Maze NxN with
-  - # as wall
-  - . as step
-  - A, B, C, D as keys
-  - S as start
-  - F as finish
+  - '#' as wall
+  - '.' as step
+  - 'A, B, C, D' as keys
+  - 'S' as start
+  - 'F' as finish
 Output :
   - Local minimum steps (with initial path S -> A -> B -> C -> D -> F)

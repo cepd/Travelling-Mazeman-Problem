@@ -17,7 +17,9 @@ he is aiming to find the shortest path  to finish his journey as soon as he gets
 Help this lazy maze traveller find the fastest route!
 
 >Input :
+
 N
+
 Maze NxN with
   - '#' as wall
   - '.' as step
